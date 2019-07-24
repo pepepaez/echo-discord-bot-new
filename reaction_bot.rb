@@ -19,7 +19,7 @@ require 'yaml'
 
 #cnf = YAML::load_file(File.join(__dir__, 'config.yml'))
 
-#bot = Discordrb::Bot.new token: 'NjAzNDY4NTc4NzQxNjgyMTc2.XTgjgg.QU4_mCZQpyaUVboGHxQgRHZ4RP0', client_id:'603468578741682176'
+
 bot = Discordrb::Bot.new token: ENV['TOKEN'], client_id: ENV['CLIENT_ID']
 
 def assign_role_by_reaction(event, &block)
